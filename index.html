@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sistema Gerenciador de ProdutosBy Ingrid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerenciador de Produtos</h1>
+        <form>
+            <div class="form-group">
+                <label for="codigoDeBarras">Código de Barras:</label>
+                <input type="text" class="form-control" id="codigoDeBarras">
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" class="form-control" id="tipo">
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso:</label>
+                <input type="text" class="form-control" id="peso">
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar Produto</button>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código de Barras</th>
+                    <th>Tipo</th>
+                    <th>Peso</th>
+                    <th>Nome</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234567890</td>
+                    <td>Alimento</td>
+                    <td>500g</td>
+                    <td>Arroz</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary">Editar</button>
+                        <button type="button" class="btn btn-sm btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0987654321</td>
+                    <td>Bebida</td>
+                    <td>1L</td>
+                    <td>Refrigerante</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary">Editar</button>
+                        <button type="button" class="btn btn-sm btn-danger">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+
+</html>
